@@ -18,7 +18,7 @@ ADD . /app
 
 WORKDIR	/app
 
-#COPY ./entrypoint.sh /
+
 RUN chmod 777 /app/entrypoint.sh
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+CMD /app/entrypoint.sh
